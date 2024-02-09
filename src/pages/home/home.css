@@ -1,0 +1,54 @@
+.name{
+    position: relative
+}
+.name::before{
+    content: '';
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    background-color: #27A776;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    transition: all 0.3s;
+    bottom: 0;
+    opacity: 0;
+    z-index: 222;
+}
+
+.card-img{
+    overflow: hidden;
+}
+
+.card-img:hover .overlay{
+    opacity: 1;
+}
+
+.card-img img{
+    transition: all 0.3s;
+}
+
+.card-img:hover img {
+    scale: 1.1;
+}
+
+.image-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 333;
+}
+
+.cross-overlay{
+    position: absolute; 
+    right: 1%;
+    z-index: 444;
+}

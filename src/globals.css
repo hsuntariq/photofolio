@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+li{
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+li:hover{
+    color: white;
+}

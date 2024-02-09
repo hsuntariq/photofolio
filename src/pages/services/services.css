@@ -1,0 +1,12 @@
+.over{
+    transition: all 0.9s;
+}
+.card:hover .over{
+    height: 100% !important;
+    z-index: 99999;
+}
+
+.card:hover .beat{
+    background-color: white !important;
+    color: #27A776 !important;
+}
